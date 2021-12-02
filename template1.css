@@ -1,0 +1,95 @@
+
+.header{
+        display: flex;
+        flex-wrap: wrap;
+}
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.intro{
+    width: 320px;
+    height: 200px;
+    background-size:300px;
+    background-repeat: no-repeat;
+    line-height:0.5;
+    font-family: Verdana;
+    flex-grow: 3;
+    max-height: fit-content;
+    
+}
+#naam{
+    padding-left: 95px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size:35px;
+    font-family: sans-serif;
+}
+.set{
+    padding-bottom: 0px;
+    font-size:20px;
+    padding-left: 95px;
+}
+.address{
+    background-color:rgb(255, 166, 0);
+    height: fit-content;
+    margin:10px;
+}
+.address>i{
+    padding: 0px;
+
+}
+.iconsl{
+    padding: 2px;
+    margin: 4px;
+}
+.iconsl{
+    background-color: rgb(255, 166, 0);
+    padding: 4px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+/*.edu{
+    line-height: 1px;
+}*/
+.lebox{
+    margin: 10px;
+}
+.leftb{
+   border-right: 1px solid black;
+   width:30%;
+}
+.rightb{
+   margin:20px;
+}
+.skills{
+    list-style-type: none;
+}
+.sitem{
+       background-color: rgb(255, 166, 0);
+       margin: 4px;
+       padding: 4px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hobbi{
+    background-color: rgb(255, 166, 0);
+    padding: 3px;
+    font-size: larger;
+}
+.uli{
+    color: yellow;
+    background-color: rgb(255, 166, 0);
+}
+.corse,.college,.year{
+    margin-left:20px;
+}
+.ikon{
+    margin: 4px;
+}
+#abtdetails{
+    margin: 10px;
+}
+.mid{
+    margin-left: 9px;
+}

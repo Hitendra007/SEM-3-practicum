@@ -1,0 +1,77 @@
+body{
+    overflow: hidden;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+#flex{
+   display: flex;
+   flex-direction:row;
+   margin-left: 90px;
+}
+#flex>div{
+    margin:5%;
+}
+
+.profile-box{
+  width: 300px;
+  height: 580px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:springgreen;
+  border-radius: 5px;
+  box-shadow: 0 6px 15px 0 rgba(12, 12, 12, 0.445);
+  transition: background-color 0.5s;
+  
+}
+.profile-box:hover{
+     background-color: yellow;
+     }
+#contact:hover{
+  background-color:black;
+  font-size: 15px;
+  width: 50%;
+  letter-spacing: 2px;
+  color:white;
+   
+}
+img{
+  width: 300px;
+}
+#prof{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+#university{
+        font-weight: bold;
+}
+.fa {
+ padding: 10px;
+ font-size: 40px;
+ width: 40px;
+ text-align: center;
+ text-decoration: none;
+ color: black;
+}
+.fa-twitter:hover{
+  color:rgb(64, 64, 243);
+}
+.fa-facebook:hover{
+  color:rgb(64, 64, 243);
+}
+.fa-linkedin:hover{
+  color: rgb(40,103,178);
+}
+.fa-instagram:hover{
+  color:red;
+}
+#contact{
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  display: inline-block;
+  border: none;
+  color: white;
+  background-color: black;
+  transition: width 0.5s;
+}   

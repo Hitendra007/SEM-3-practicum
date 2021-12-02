@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body id="bod">
+      <div class="load"><div id="loader-container">
+        <p id="loadingText" style="color: black;">Welcome</p>
+      </div></div> 
+      <div class="full">   
+    <nav class="nav">
+                <ul class="links">
+                    <li class="nav-item"><a href="">Resume<b>Maker</b></a></li>
+                    <li class="nav-item login"><button class="login-btn"><a href="login form.htm">Login / signup</a></button></li>
+                </ul>
+            </nav><hr>
+        <img src="home1.jpg" class="homeimage">
+        <div class="intro">
+            <h1>Lets Get Started!</h1>
+            <div class="instruc">
+               <h3 >Enter Your Information</h3>
+               <div class="details">
+                   <p>You can use our pre-written content to enhance<br> your skills and experience.</p>
+               </div>
+            </div>
+            <div class="instruc">
+                <h3 >Select a Template</h3>
+                <div class="details">
+                    <p>First, pick one of our approved templates to<br> personalize and format your resume.</p>
+                </div>
+             </div>
+             <div class="instruc">
+                <h3 >Download and Print</h3>
+                <div class="details">
+                    <p>Yeah! Your resume is ready to share!</p>
+                </div>
+             </div>
+             <a href="Homepage.html"><button class="continue">continue</button></a>
+             <p id="tc">By clicking “Continue”, you agree to our <a href="">Terms and Conditions</a> and<br> <a href="" >Privacy Policy</a>.</p>
+        </div>
+    </div>
+        <script>
+            let full = document.querySelector('.full');
+            full.style.display="none";
+            let load = document.querySelector('.load');
+            document.body.style.backgroundColor = "#3498db";
+            window.addEventListener('load',function () {
+                setTimeout(() => {
+                    load.style.display="none";
+                    full.style.display="block";
+                    document.body.style.backgroundColor = "white";
+                },5000);
+            });
+        </script>
+    
+</body>
+
+</html>

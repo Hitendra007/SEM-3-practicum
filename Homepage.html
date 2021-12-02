@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <link rel="stylesheet" href="Homepage.css">
+    <title>Resume Generator</title>
+</head>
+
+<body id="big">
+    <div class="loader">
+        <div class="load">
+            <div id="loader-container">
+                <p id="loadingText" style="color: black;">LOADING</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-2" style="font-family:sans-serif;">Resume Maker</h1>
+        <p class="text-center"><a href="creators.html" target="blank"
+                style="text-decoration: none; color:blue; font-weight: bold;">Creators</a></p>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <!--first col-->
+                <h3>Personal Information</h3>
+                <!---->
+                <div class="form-group">
+                    <label for="Profile">Upload image</label>
+                    <input type="file" id="profilpic" class="form-control >
+                </div>
+                <div class=" form-group">
+                    <label for="nameField">Your Name</label>
+                    <input type="text" id="nameField" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class=" form-group">
+                    <label for="titleField">Job title</label>
+                    <input type="text" id="titleField" placeholder="software developer" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactField">Your Contact</label>
+                    <input type="number" id="contactField" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="mailField">Email</label>
+                    <input type="email" id="mailField" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="addressField">Your Address</label>
+                    <textarea id="addressField" placeholder="Enter here" class="form-control" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="cityField">City</label>
+                    <input type="city" id="cityField" placeholder="Enter here" class="form-control">
+                </div>
+
+                <p class=" my-3" style="color:black;">Important Links</p>
+                <div class="form-group mt-2">
+                    <label for="fbField">Facebook</label>
+                    <input type="text" id="fbField" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="instaField">Instagram</label>
+                    <input type="text" id="instaField" placeholder="Enter here" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="linkedinField">LinkedIn</label>
+                    <input type="text" id="linkedinField" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="educatiionField">Education</label><br>
+                    <input type="text" id="eduyear" placeholder="year" class="form-control edu">
+                    <input type="text" id="eduschool" placeholder="University" class="form-control edu">
+                    <input type="text" id="educourse" placeholder="course" class="form-control edu">
+
+                    <input type="text" id="eduyear1" placeholder="year" class="form-control edu">
+                    <input type="text" id="eduschool1" placeholder="University" class="form-control edu">
+                    <input type="text" id="educourse1" placeholder="course" class="form-control edu">
+
+                    <input type="text" id="eduyear2" placeholder="year" class="form-control edu">
+                    <input type="text" id="eduschool2" placeholder="University" class="form-control edu">
+                    <input type="text" id="educourse2" placeholder="course" class="form-control edu">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="interestField">Interest</label>
+                    <input type="text" id="I1" placeholder="interest 1" class="form-control">
+                    <input type="text" id="I2" placeholder="interest 2" class="form-control">
+                    <input type="text" id="I3" placeholder="Interest 3" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="askill">Skills</label><br>
+                    <input type="text" id="sk1" placeholder="Skill 1" class="form-control">
+                    <input type="text" id="per1" placeholder="Percentage%" class="form-control">
+                    <input type="text" id="sk2" placeholder="Skill 2" class="form-control">
+                    <input type="text" id="per2" placeholder="Percentage%" class="form-control">
+                    <input type="text" id="sk3" placeholder="skill 3" class="form-control">
+                    <input type="text" id="per3" placeholder="Percentage%" class="form-control">
+                    <input type="text" id="sk4" placeholder="skill 4" class="form-control">
+                    <input type="text" id="per4" placeholder="Percentage%" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="refrenceField">References</label>
+                    <input type="text" id="rname" placeholder="Refree name" class="form-control">
+                    <input type="text" id="rm" placeholder="Refree mobile number" class="form-control">
+                    <input type="text" id="re" placeholder="Refree email" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <!--second col-->
+                <h3>Professional Information</h3>
+
+                <div class="form-group mt-2">
+                    <label for="">Objective</label>
+                    <textarea id="objectiveField" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group mt-2" id="aw">
+                    <label for="">Awards</label>
+                    <textarea id="awlist"
+                        placeholder="In a short statement no more than two sentence describe any award you have been given!"
+                        class="form-control awField" rows="3"></textarea>
+                </div>
+                <div class="form-group mt-2" id="am">
+                    <label for="">About me</label>
+                    <textarea id="abtme"
+                        placeholder="Write a few paragraphs explaining exaxtly who you are and your strengths and why are you a suitable candidate!"
+                        class="form-control amField" rows="3"></textarea>
+                </div>
+
+
+                <div class="form-group mt-2" id="we">
+                    <label for="">Work Experience</label>
+                    <textarea placeholder="Enter here" class="form-control weField" rows="3"></textarea>
+
+                    <!--new textarea-->
+
+                    <div class="container text-center mt-2" id="weAddButton">
+                        <button onclick="addNewWEField()" class="btn  btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="aq">
+                    <label for="">Academic Qualification</label>
+                    <textarea id="" placeholder="Enter here" class="form-control aqField" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="aqAddButton">
+                        <button onclick="addNewAQField()" class="btn  btn-sm">Add</button>
+                    </div>
+                </div>
+                <div class="form-group mt-2" id="as">
+                    <label for="">Additional Skills</label>
+                    <textarea id="" placeholder="Enter here" class="form-control asField" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="asAddButton">
+                        <button onclick="addNewAsField()" class="btn  btn-sm">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <button onclick="generateCV()" class="btn btn-lg" id="choset">Generate CV</button>
+        </div>
+    </div>
+
+    <!--cv template-->
+
+    <div class="container" id="cv-template">
+
+        <div class="row">
+
+            <div class="col-md-4 text-center py-5 background">
+                <!-- first column -->
+                <img id="img"
+                    src="https://support.bookingkare.com/wp-content/uploads/2019/08/default-profile-picture.jpg"
+                    alt="profile" class="img-fluid myimg">
+
+                <div class="container">
+                    <p id="nameT1">xyz</p>
+                    <p id="contactT">9116393234</p>
+                    <p id="addressT">house no- 468, ward no-6, sangaria, Rajasthan</p>
+                    <hr>
+                    <p>
+                        <a id="fbT" href="#1"></a>
+                    </p>
+                    <p>
+                        <a id="instaT" href="#1"></a>
+                    </p>
+                    <p>
+                        <a id="linkedT" href="#1"></a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-8 py-5">
+                <!-- second column -->
+                <h1 id="nameT2" class="text-center" style="font-weight: 980;">xyz</h1>
+
+
+                <!--Objective card-->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat doloribus eaque odit omnis
+                            laborum dolores quaerat veritatis excepturi accusamus. Nihil voluptate quibusdam amet
+                            doloribus, rem quo! Officiis necessitatibus explicabo vel quis harum laboriosam, aperiam
+                            ducimus rem quia distinctio dolores unde autem dolor minus! Dignissimos omnis reprehenderit
+                            ducimus ipsum autem beatae quidem ab itaque, molestias voluptas vitae praesentium esse
+                            quasi, sequi vero hic sapiente veniam animi voluptatum harum. Adipisci, nostrum reiciendis
+                            quis, ipsam expedita animi beatae recusandae dolorum deleniti voluptas porro amet sit nam.
+                            Mollitia non odit perspiciatis aliquam cumque optio molestias! Non recusandae placeat
+                            deserunt fugiat dicta debitis perferendis minima repudiandae quis nam temporibus, unde
+                            dignissimos qui minus, at consectetur dolorum quod natus dolor. Corporis, harum. Rem, magnam
+                            cupiditate fugiat quis, reiciendis repudiandae assumenda nulla esse sit ad magni quas
+                            impedit ut deleniti! Esse voluptatibus ut mollitia! Et porro adipisci sint iure assumenda
+                            ducimus commodi incidunt, ex debitis beatae sed vero cum molestiae nulla qui explicabo at!
+                            Aliquid tempore vero quae. Cum atque ea eaque error, soluta suscipit voluptates iusto quod
+                            itaque adipisci placeat fuga quasi reiciendis odit. Laborum magnam facilis ullam esse,
+                            commodi eius ut suscipit error repellat asperiores quibusdam tempore temporibus, ab autem
+                            explicabo? Accusantium maiores, assumenda tempore dolore consectetur minima tenetur, nostrum
+                            aspernatur, laboriosam recusandae atque eum consequatur sed? Expedita sapiente numquam odit
+                            adipisci.
+                            Libero iure aut beatae doloremque iusto enim eveniet fugiat ducimus. Quidem minus, quasi
+                            veniam nemo, amet in exercitationem velit expedita dolorum minima fugiat repellat enim
+                            laborum laboriosam! Aliquam modi error ab adipisci minima enim nisi distinctio deserunt
+                            magni laboriosam repellendus blanditiis earum corporis beatae recusandae, velit temporibus
+                            dolore culpa id animi sit non laborum. Quisquam, porro quas, perferendis perspiciatis
+                            accusantium voluptatibus non laboriosam aspernatur hic cumque quibusdam, magnam nobis
+                            maiores? Nihil, amet, earum labore quidem consectetur quam dicta eligendi, quibusdam nemo
+                            saepe cupiditate.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Work Experience-->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!--Academic Qualification-->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Additional skills</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="asT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container mt-3 text-center">
+                    <button onclick="printCV()" class="btn background" id="pr1">print CV</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div id="template1">
+        <div class="main-box">
+            <div class="left">
+                <!--left flex item-->
+                <div id="about" class="lbox">
+                    <i class="fa fa-id-card-o icons" style="font-size:24px"> About me</i>
+                    <p id="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente facilis corrupti
+                        laudantium temporibus quaerat pariatur inventore eaque magni ut, totam voluptatum, voluptatibus
+                        labore sed facere porro ducimus dignissimos unde numquam!</p>
+                    <a href=""></a><i class="fa fa-facebook icon" id="faceb" style="font-size:24px"> facebook/jason</i>
+                    <i class="fa fa-linkedin icon" id="linkd" style="font-size:24px"> linkdin/jason</i>
+                </div>
+                <hr><br>
+                <div id="workExp" class="lbox">
+                    <i class="fa fa-hourglass-2 icons" style="font-size:24px"> Work Experience</i>
+                    <ul id="weexp">
+
+                    </ul>
+                </div>
+                <hr><br>
+                <div id="skills" class="lbox">
+                    <i class="fa fa-puzzle-piece icons" style="font-size:24px"> Skills</i>
+                    <ul class="skills">
+                        <li class="sitem0" id="s1">C++</li>
+                        <li class="sitem0" id="s2">C++</li>
+                        <li class="sitem0" id="s3">C++</li>
+                        <li class="sitem0" id="s4">C++</li>
+                    </ul>
+                </div>
+                <hr><br>
+                <div id="education">
+                    <i class="fa fa-mortar-board icons" style="font-size:24px"> Education</i>
+                    <div class="clg">
+                        <table id="edu">
+                            <th>Year</th>
+                            <th>School name</th>
+                            <th>course</th>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <!--right flex item-->
+                <div id="imgbox">
+                    <img id="img1" src="hitendra.jpg">
+                    <div id="name">
+                        <h3 id="namehead">Hitendra singh</h3>
+                    </div>
+                </div>
+                <div id="awards" class="innerbox">
+                    <i class="fa fa-trophy iconsright">Awards</i>
+                    <p id="awardslist">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ad quasi
+                        recusandae nobis minima necessitatibus cumque iste molestias facilis aut.</p>
+                </div>
+                <hr>
+                <div id="interest" class="innerbox">
+                    <i class="fa fa-leaf iconsright" style="font-size:24px">Interest</i>
+                    <ul class="intrst">
+                        <li class="item" id="int1">cricket</li>
+                        <li class="item" id="int2">football</li>
+                        <li class="item" id="int3">baseball</li>
+                    </ul>
+                </div>
+                <hr>
+                <div id="refrences" class="innerbox">
+                    <i class="fa fa-user-circle iconsright" style="font-size:24px">References</i>
+                    <p id="refname">Subham</p>
+                    <p id="refnum">9897623**</p>
+                    <p id="redemail">bhupesh@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 text-center">
+            <button onclick="printCV()" class="btn background" id="pr2">print CV</button>
+        </div>
+    </div>
+    </div>
+    <div id="template2">
+        <div class="header">
+            <div class="intro" style="background-image: url('circle.png');">
+                <h3 id="naam" class="set">Hitendra singh</h3>
+                <h4 id="title" class="set">software Developer</h4>
+            </div>
+            <div class="address">
+                <i class="fa fa-map-marker" style="font-size:24px" id="cit"> Sonepat,Harayana</i><br><hr>
+                <i class="fa fa-phone-square" style="font-size:24px" id="cont"> 7906173480</i><br><hr>
+                <i class="fa fa-envelope" style="font-size:24px" id="em"> hitendra369432@gmail.com</i><br><hr>
+                <i class="fa fa-linkedin-square" style="font-size:24px" id="link"> hitendra369432</i>
+            </div>
+        </div>
+        <div class="mid">
+            <i class="fa fa-drivers-license iconsl" style="font-size:24px"> About</i>
+            <p id="abtdetails">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste magnam quia quae
+                laudantium inventore ullam esse dolorum pariatur possimus. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis sed illo dicta asperiores delectus, sunt repellendus a quas perspiciatis
+                iste
+                dolore facilis quibusdam animi cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                corporis
+                commodi minus voluptatem, non ducimus accusamus consequatur quaerat alias dolore error. Fugiat nihil
+                architecto minima quos reprehenderit modi, rem sed!</p>
+        </div>
+        <div class="bottom">
+            <div class="leftb">
+                <div class="edu lebox">
+                    <i class="fa fa-mortar-board iconsl" style="font-size:24px"> Education</i>
+                    <h5 class="corse" id="cor1"></h5>
+                    <h5 class="college" id="clg1"></h5>
+                    <h5 class="year" id="yr1"></h5>
+                    <hr>
+                    <h5 id="cor2" class="corse"></h5>
+                    <h5 class="college" id="clg2"></h5>
+                    <h5 class="year" id="yr2"></h5>
+                    <hr>
+                    <h5 id="cor3" class="corse"></h5>
+                    <h5 class="college" id="clg3"></h5>
+                    <h5 class="year" id="yr3"></h5>
+                </div>
+                <hr class="uli">
+                <div class="skill lebox">
+                    <i class="fa fa-puzzle-piece iconsl" style="font-size:24px"> Skills</i>
+                    <ul class="skills">
+                        <li class="sitem" id="si1">C++</li>
+                        <li class="sitem" id="si2">C++</li>
+                        <li class="sitem" id="si3">C++</li>
+                        <li class="sitem" id="si4">C++</li>
+                    </ul>
+                </div>
+                <hr class="uli">
+                <div class="hobby lebox">
+                    <h4 class="hobbi">Hobby</h4>
+                    <i class="fa fa-futbol-o ikon" style="font-size:24px"></i>
+                    <i class="fa fa-camera ikon" style="font-size:24px"></i>
+                    <i class="fa fa-coffee ikon" style="font-size:24px"></i>
+                </div>
+            </div>
+            <div class="rightb">
+                <div class="workExp">
+                    <i class="fa fa-hourglass iconsl" style="font-size:24px">Work Experience</i>
+                    <div class="exp1">
+                        <ul id="weex">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 text-center">
+            <button onclick="printCV()" class="btn background" id="pr3">print CV</button>
+        </div>
+    </div>
+    <div id="ctemp">
+        <button onclick="generateCV()" class="btn btn-lg " id="choset">Choose template</button>
+        <div class="temp">
+            <img src="default template.PNG" id="t0" class="timage" alt="default template">
+        </div>
+        <div class="temp">
+            <img src="home1.jpg" id="t1" class="timage" alt="default template">
+        </div>
+        <div class="temp">
+            <img src="temp2.jpg" id="t2" class="timage" alt="default template">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    <script>
+        let big = document.querySelector('#cv-form');
+        big.style.display = "none";
+        let spinner = document.querySelector('.loader');
+
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+                spinner.style.display = "none";
+                big.style.display = "block";
+
+            }, 5000);
+        });
+    </script>
+
+</body>
+
+</html>
